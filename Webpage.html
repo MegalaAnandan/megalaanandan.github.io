@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Megala Anandan</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 280px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      position: fixed;
+    }
+
+    .sidebar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      /*border: 5px solid #fff;*/
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .sidebar h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .sidebar p {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: #e0e0e0;
+      text-decoration: none;
+    }
+
+    .sidebar .social-links {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .sidebar .social-links a {
+      display: block;
+      margin: 8px 0;
+      color: #e0e0e0;
+      font-size: 1.1em;
+    }
+
+    .sidebar .social-links a:hover {
+      color: #4CAF50;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 300px;
+      padding: 40px;
+      flex: 1;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .tab {
+      padding: 12px 18px;
+      margin-right: 15px;
+      font-size: 1.7em;
+      cursor: pointer;
+      background-color: #dfe6e9;
+      border-radius: 5px;
+      color: #2c3e50;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .tab:hover,
+    .tab.active {
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      font-size: 1.3em;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+
+    .content {
+      text-align: justify;
+    }
+
+    ol {
+      font-size: 1.em;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="Photo.jpeg" alt="Megala Anandan" style="object-fit: cover; object-position: center 35%">
+  <h1>Megala Anandan</h1>
+  <p>Postdoctoral Researcher<br>
+    <a href="https://www.mathematik.uni-mainz.de" target="_blank">
+      Institut für Mathematik, Johannes Gutenberg Universität Mainz
+    </a>
+  </p>
+
+  <div class="social-links" style="text-align: left;">
+  <a href="mailto:manandan@uni-mainz.de" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/maildotru.svg" alt="Email" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">Email
+  </a>
+  <a href="https://www.researchgate.net/profile/Megala-Anandan-2" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/researchgate.svg" alt="ResearchGate" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">ResearchGate
+  </a>
+  <a href="https://scholar.google.com/citations?user=60nNJE8AAAAJ" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">Google Scholar
+  </a>
+  <a href="https://orcid.org/0000-0003-4631-3996" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/orcid.svg" alt="ORCID" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">ORCID
+  </a>
+  <a href="http://arxiv.org/a/anandan_m_1" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arxiv.svg" alt="arXiv" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">arXiv.org
+  </a>
+  <a href="https://github.com/MegalaAnandan" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/megala-anandan" target="_blank" style="display: flex; align-items: center; margin-bottom: 6px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width: 1em; height: 1em; margin-right: 6px; margin-bottom: 0px">LinkedIn
+  </a>
+</div>
+</div>
+
+
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('home')">Home</button>
+      <button class="tab" onclick="showTab('publications')">Publications</button>
+      <button class="tab" onclick="showTab('teaching')">Teaching</button>
+      <button class="tab" onclick="showTab('cv')">CV</button>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="tab-content active">
+      <p class="content">
+        I am a postdoctoral researcher working with 
+              <a href="https://www.numerik.mathematik.uni-mainz.de/prof-dr-maria-lukacova-medvidova/" 
+              target="_blank">Prof. Dr. Mária Lukáčová-Medviďová</a>, 
+              in the <a href="https://www.numerik.mathematik.uni-mainz.de"
+              target="_blank">Numerical Mathematics group </a>
+              at Johannes Gutenberg Universität Mainz. Prior to my current role, I was a PhD student at the <a href="https://iisc.ac.in"target="_blank">Indian Institute of Science</a>, and 
+              was awarded the <a href="https://www.pmrf.in"target="_blank">Prime Minister's Research Fellowship</a> by the Ministry of Education, Government of India,
+              to pursue my PhD. I am interested in the development and numerical analysis of structure-preserving methods for hyperbolic systems 
+              and multiscale kinetic equations. </p> 
+            <p class="content"> The hyperbolic systems of partial differential equations (PDEs) tend to develop discontinuous solutions even for 
+                smooth initial data. Furthermore, infinitely many weak entropy solutions can be constructed for multidimensional systems 
+                governing fluid motion, such as compressible and incompressible Euler systems. This opens an important question on 
+                admissibility criteria to select a physically reasonable, unique solution. Incidentally, many standard numerical methods 
+                pick up the correct physically relevant solution, and it is interesting to identify the underlying structural properties, 
+                such as positivity preservation and entropy inequality. Moreover, it is of fundamental importance that the schemes 
+                satisfy structure-preserving properties in order to analyze the convergence of numerical schemes.</p>
+            <p class="content"> I'm also interested in developing efficient methods for multiscale PDEs. 
+                Standard explicit methods are inefficient for such systems, as the time step scales with the small parameters. 
+                Fully implicit methods for such nonlinear systems are also inefficient due to the need for iterative solvers 
+                at each time step. Therefore, efficient and clever implicit-explicit (IMEX) methods with a reasonable time step condition 
+                that is independent of the small parameters are required. Furthermore, these methods must be consistent with the asymptotic 
+                limits of the PDEs, and hence it is important to develop asymptotic preserving IMEX methods for multiscale PDEs.
+      </p>
+
+      <!-- <h2>Postdoctoral projects</h2> -->
+    </div>
+
+    <!-- Publications -->
+    <div id="publications" class="tab-content">
+      <h2>Journal publications and full-length conference proceedings</h2>
+      <ol reversed>
+        <li>Megala Anandan, Mária Lukáčová-Medviďová, S. V. Raghurama Rao, "An asymptotic preserving scheme satisfying entropy stability for the barotropic Euler system, SeMA Journal, 2025. 
+          [<a href="https://link.springer.com/article/10.1007/s40324-025-00395-7"
+          target="_blank">Published article</a>], [<a href="https://arxiv.org/abs/2503.07284"
+          target="_blank">Preprint</a>].</li>          
+        <li>Megala Anandan, S. V. Raghurama Rao, "On Lattice Boltzmann Methods based on vector-kinetic models for hyperbolic partial differential equations", 
+            Computers and Fluids, 2024. [<a href="https://doi.org/10.1016/j.compfluid.2024.106348"target="_blank">Published article</a>], 
+            [<a href=" https://arxiv.org/abs/2401.03952"target="_blank">Preprint</a>].</li>
+        <li>Megala Anandan, Benjamin Boutin, Nicolas Crouseilles, "High order asymptotic preserving scheme for diffusive scaled linear kinetic equations with general initial conditions", 
+            ESAIM: Mathematical Modelling and Numerical Analysis, 2024. [<a href="https://doi.org/10.1051/m2an/2024028"target="_blank">Published article</a>], 
+            [<a href="https://arxiv.org/abs/2305.13393"target="_blank">Preprint</a>].</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "Entropy conserving/stable schemes for a vector-kinetic model of hyperbolic systems", 
+            Applied Mathematics and Computation, 2024. [<a href="https://doi.org/10.1016/j.amc.2023.128410"target="_blank">Published article</a>], 
+            [<a href="https://arxiv.org/abs/2302.08014"target="_blank">Preprint</a>].</li>
+        <li>Megala A, S. V. Raghurama Rao, "D2Q9 model of upwind lattice Boltzmann scheme for hyperbolic scalar conservation laws", Proceedings 
+            of the ECCOMAS Congress 2022 - 8th European Congress on Computational Methods in Applied Sciences and Engineering.
+            [<a href="https://doi.org/10.23967/eccomas.2022.074"target="_blank">Published article</a>].</li>
+      </ol>
+
+      <h2>Preprints</h2>
+      <ol reversed>
+        <li>Megala Anandan, Benjamin Boutin, Nicolas Crouseilles, "Uniformly higher order accurate schemes for dynamics of charged particles under fast oscillating magnetic fields", Accepted for 
+            publication in IMA Journal of Numerical Analysis. 
+            [<a href="https://arxiv.org/abs/2411.04497"target="_blank">Preprint</a>].</li>
+      </ol>
+
+      <h2>Talks</h2>
+      <ol reversed>
+        <li>Megala Anandan, Mária Lukáčová-Medviďová, S. V. Raghurama Rao, "Asymptotic preserving and energy stable numerical schemes for barotropic Euler equations",
+          numhyp25: Numerical Methods for Hyperbolic Problems, Darmstadt, Germany.</li>      
+        <li>Megala Anandan, S. V. Raghurama Rao, "Entropy conserving and stable schemes for vector-kinetic and macroscopic models", 
+          Kompaktseminar 2024, Prien am Chiemsee, Germany.</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "A study of Lattice Boltzmann methods based on vector-kinetic models", 
+          33<sup>rd</sup> International Conference on Discrete Simulation of Fluid Dynamics (DSFD), ETH Zurich, Switzerland (2024).</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "Entropy conserving/stable schemes for vector-kinetic and macroscopic models", 
+          19<sup>th</sup> International Conference on Hyperbolic Problems: Theory, Numerics and Applications (HYP2024), Shanghai, China.</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "A discrete-kinetic entropy conserving and exact discontinuity capturing scheme for scalar conservation laws", 
+          XVIII International Conference on Hyperbolic Problems: Theory, Numerics, Applications (HYP2022), Málaga, Spain.</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "D2Q9 model of upwind lattice Boltzmann scheme for hyperbolic scalar conservation laws", 
+          ECCOMAS Congress 2022, Oslo, Norway.</li>
+        <li>Megala Anandan, S. V. Raghurama Rao, "An entropy conservative and exact discontinuity capturing discrete kinetic scheme for scalar conservation laws", 
+          Oberseminar Numerik, Institut für Mathematik, Johannes Gutenberg Universität Mainz, Germany (2022). 
+          [<a href="https://www.numerik.mathematik.uni-mainz.de/files/2022/05/2022-06-03-Abstract_Megala.pdf"
+          target="_blank">Abstract</a>].</li>
+      </ol>
+
+      <h2>Thesis</h2>
+      <ul>
+        <li>Megala Anandan, "On structure preserving numerical schemes for hyperbolic partial differential equations and multiscale kinetic equations", 
+          <a href="https://etd.iisc.ac.in/handle/2005/6631"
+          target="_blank">PhD thesis</a>, Indian Institute of Science, 2024.</li> 
+      </ul>
+
+
+    </div>
+
+    
+
+    <!-- Teaching -->
+    <div id="teaching" class="tab-content">
+      <h2>Teaching</h2>
+      As a part of my <a href="https://www.pmrf.in"target="_blank">Prime Minister's Research Fellowship</a>, 
+      I lectured full courses at different private institutions in India.  
+  <ul>
+    <li><strong>July 2024 at the Ramaiyah University of Applied Sciences, Bangalore, India:</strong> Hyperbolic partial differential equations, Instructor</li>
+    <li><strong>Aug 2023 – Dec 2023 at the Indian Institute of Science, Bangalore, India:</strong> Fluid Dynamics, Teaching Assistant</li>
+    <li><strong>Oct 2022 – June 2023 at the R.V. College of Engineering, Bangalore, India:</strong> Hyperbolic partial differential equations and computational aspects, Instructor</li>
+    <li><strong>Jan 2022 – Sep 2022 at the Ramaiyah University of Applied Sciences, Bangalore, India:</strong> Hyperbolic problems and computational aspects, Instructor</li>
+    <li><strong>Feb 2021 – Nov 2021 at the R.V. College of Engineering, Bangalore, India:</strong> Hyperbolic partial differential equations - Theory and computation, Instructor. <a href="https://youtube.com/playlist?list=PLHbpb-TTP3vRAKO9nnaGQzsP0mY8Yksmc&feature=shared"
+      target="_blank">Lectures on YouTube</a></li>
+  </ul>
+
+  <h2>Mentoring</h2>
+  <ul>
+    <li><strong>Jan 2022 – Dec 2023:</strong> Naman Manoj Ladhad, Nihal Hebbar, Undergrad students, R.V. College of Engineering (RVCE), Bangalore</li>
+    <li><strong>May 2023 – Jan 2024:</strong> Dushyant Dixit, Masters student, Indian Institute of Technology (IIT) Kharagpur</li>
+  </ul>
+    </div>
+
+    <!-- CV -->
+    <div id="cv" class="tab-content">
+      <h2>Curriculum Vitae</h2>
+      <p>You can view or download my CV below.</p>
+      <p><a href="Megala_Anandan_CV.pdf" target="_blank">Download my CV (PDF)</a></p>
+      <object data="Megala_Anandan_CV.pdf" type="application/pdf" width="100%" height="600px">
+        <p>Your browser does not support PDFs. <a href="Megala_Anandan_CV.pdf" target="_blank">Download the PDF</a>.</p>
+      </object>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const contents = document.querySelectorAll('.tab-content');
+      const tabs = document.querySelectorAll('.tab');
+
+      contents.forEach(content => content.classList.remove('active'));
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
